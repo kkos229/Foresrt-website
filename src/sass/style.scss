@@ -463,6 +463,61 @@ transition: background-color .3s, color .3s;
 
 }
 
+//telephone
+
+.telephone{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding: 4em;
+	background-image: url(../img/forestPhone-small.webp);
+	background-size: cover;
+	background-position: 50% 35%;
+	// background-attachment: fixed;
+	z-index: 0;
+&__shadow{
+position: absolute;
+top: 0;left: 0;right: 0;bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: -5;
+}
+&__text{
+	padding: 1em 2em;
+	color: #fff;
+	font-size: 2rem;
+	border:1px solid white;
+	text-align: center;
+
+	h3{
+		margin-bottom: 0.2em;
+		font-size: 2.5rem;
+		font-weight: normal;
+	}
+	p{
+		font-size: 2.2rem;
+		font-weight: lighter;
+	}
+
+}
+}
+
+// map
+
+.map{
+	background-color: #f1f1f1;
+	text-align: center;
+
+	.section-title{
+		padding: 1em;
+		font-size: 3.5rem;
+	}
+	iframe{
+		margin: 3em 0 5em;
+		width: 50%;
+		height: 250px;
+	}
+}
+
 // footer
 .footer{
 	background-color: #c6c6c6;
@@ -630,6 +685,12 @@ font-size: 1.8rem;
 		}
 	}
 
+	.telephone{
+		&__line{
+				display: inline-block;
+		}
+	}
+
 }
 @media (min-width: 710px) {
 	.header {
@@ -752,6 +813,18 @@ font-size: 1.8rem;
 			width: 70%;
 		}
 	}
+
+	.map{
+		iframe{
+			width: 40%;
+			height: 350px;
+
+		}
+	}
+
+	.telephone{
+		background-image: url(../img/forestPhone-big.webp);
+	}
 }
 @media (min-width: 1024px) {
 	.nav {
@@ -807,5 +880,9 @@ font-size: 1.8rem;
 		&__title {
 			padding: 0.5em 3em;
 		}
+	}
+
+	.telephone{
+		padding: 5em;
 	}
 }
