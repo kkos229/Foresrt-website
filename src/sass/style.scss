@@ -200,7 +200,7 @@ content: '';
 }
 
 // header
-
+ 
 .header {
 	margin-top: 6.5rem;
 	position: relative;
@@ -570,6 +570,63 @@ z-index: -5;
 }
 }
 
+// 404 page
+
+//header404
+
+.header404{
+	position: relative;
+	padding-bottom: 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url(https://t3.ftcdn.net/jpg/07/19/00/32/360_F_719003243_yARCGv9eZ2v09j28B3UXmy81pjiczv5b.jpg);
+	background-size: cover;
+	background-position:60% 50%;
+	color: #fff;
+	z-index: 0;
+
+	&__shadow{
+		position: absolute;
+		top: 0;left: 0;right: 0;bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -5;
+	}
+	&__title{
+		margin: 1em;
+		margin-bottom: 0.2em;
+		font-size: 4rem;
+		text-align: center;
+	}
+	&__subtitle{
+		margin-bottom: 4em;
+		font-size: 2rem;
+	}
+	&__ul{
+		// margin-bottom: 1em;
+		line-height: 1.5em;
+		font-size: 1.6rem;
+		text-align: center;
+		list-style: none;
+	}
+	&__p{
+		font-size: 2rem;
+		margin-bottom: .5em;
+	}
+	.website-link{
+		color: #00ffaa;
+
+		&::before{
+			background-color: #00ffaa;
+		}
+		&:hover{
+			color: #fff;
+		}
+	}
+}
 
 
 // media
