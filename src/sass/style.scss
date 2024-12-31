@@ -617,13 +617,13 @@ z-index: -5;
 		margin-bottom: .5em;
 	}
 	.website-link{
-		color: #00ffaa;
+		color: #00a354;
 
 		&::before{
-			background-color: #00ffaa;
+			background-color: #00a354;
 		}
 		&:hover{
-			color: #fff;
+			color: #fff; 
 		}
 	}
 }
